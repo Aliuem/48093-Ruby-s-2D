@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 723545483}
   - component: {fileID: 723545482}
   m_Layer: 0
-  m_Name: "Ruby\xB4s"
+  m_Name: Ruby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
