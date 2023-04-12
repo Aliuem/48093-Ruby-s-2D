@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1118006738685391613}
   - component: {fileID: 279956872626666244}
   - component: {fileID: 5290919565504765573}
-  - component: {fileID: 2435196021601289995}
+  - component: {fileID: 5772949436402416854}
   m_Layer: 0
   m_Name: Inimigo
   m_TagString: Untagged
@@ -150,7 +150,7 @@ MonoBehaviour:
   speed: 0
   vertical: 0
   changeTime: 3
---- !u!95 &2435196021601289995
+--- !u!95 &5772949436402416854
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -160,7 +160,7 @@ Animator:
   m_GameObject: {fileID: 106847792419663996}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 41a29776324a3374888869267bd758bd, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
