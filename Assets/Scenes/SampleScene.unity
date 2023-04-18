@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inimigo
       objectReference: {fileID: 0}
+    - target: {fileID: 5772949436402416854, guid: 028a9902fbe57254ba2585f63a3c3f93, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 41a29776324a3374888869267bd758bd, type: 2}
     - target: {fileID: 6139097541187036405, guid: 028a9902fbe57254ba2585f63a3c3f93, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -8766,7 +8770,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1165430392}
   - component: {fileID: 1165430391}
-  - component: {fileID: 1165430393}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -8828,36 +8831,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1165430393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165430390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e501d18bb52cf8c40b1853ca4904654f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_CollideAgainst:
-    serializedVersion: 2
-    m_Bits: 1
-  m_IgnoreTag: 
-  m_TransparentLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_MinimumDistanceFromTarget: 0.1
-  m_AvoidObstacles: 1
-  m_DistanceLimit: 0
-  m_MinimumOcclusionTime: 0
-  m_CameraRadius: 0.1
-  m_Strategy: 1
-  m_MaximumEffort: 4
-  m_SmoothingTime: 0
-  m_Damping: 0
-  m_DampingWhenOccluded: 0
-  m_OptimalTargetDistance: 0
 --- !u!4 &1215195066 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3336600740285457749, guid: 2e7dd103f7fdf5f438cff0cdeae2fcce, type: 3}
@@ -9463,6 +9436,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2507867929634361424, guid: 2e7dd103f7fdf5f438cff0cdeae2fcce, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b77822e0485373d40b5beb92e9a5e728, type: 2}
     - target: {fileID: 3336600740285457731, guid: 2e7dd103f7fdf5f438cff0cdeae2fcce, type: 3}
       propertyPath: m_Name
       value: "Ruby\xB4s"
