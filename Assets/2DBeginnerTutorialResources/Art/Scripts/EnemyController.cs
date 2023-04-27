@@ -8,8 +8,6 @@ using UnityEngine;
     public bool vertical;
     public float changeTime = 3.0f;
 
-    public ParticleSystem smokeEffect;
-    
     Rigidbody2D rigidbody2D;
     float timer;
     int direction = 1;
@@ -85,7 +83,5 @@ using UnityEngine;
         rigidbody2D.simulated = false;
         //optional if you added the fixed animation
         animator.SetTrigger("Fixed");
-        
-        smokeEffect.Stop();
     }
 }

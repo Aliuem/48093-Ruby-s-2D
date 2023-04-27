@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6139097541187036405}
   - component: {fileID: 3028481707651262397}
-  - component: {fileID: 1118006738685391613}
   - component: {fileID: 279956872626666244}
+  - component: {fileID: -7749092727170493271}
   - component: {fileID: 5290919565504765573}
   - component: {fileID: 5772949436402416854}
   - component: {fileID: 6928355551596452362}
@@ -90,32 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1118006738685391613
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106847792419663996}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.034950733, y: -0.96665007}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.1333334, y: 2.1333334}
-    newSize: {x: 2.56, y: 2.56}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.6726589, y: 0.6266998}
-  m_EdgeRadius: 0
 --- !u!50 &279956872626666244
 Rigidbody2D:
   serializedVersion: 4
@@ -137,6 +111,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &-7749092727170493271
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106847792419663996}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.1333334, y: 2.1333334}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.1333334, y: 2.1333334}
+  m_EdgeRadius: 0
 --- !u!114 &5290919565504765573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,7 +152,6 @@ MonoBehaviour:
   speed: 0
   vertical: 0
   changeTime: 3
-  smokeEffect: {fileID: 3390560148179616376}
 --- !u!95 &5772949436402416854
 Animator:
   serializedVersion: 5
@@ -196,7 +195,7 @@ AudioSource:
   MinDistance: 0.43002903
   MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -206,21 +205,57 @@ AudioSource:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -23.263542
+      outSlope: -23.263542
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.0043792725
+      value: 1.0006444
+      inSlope: -0.043020025
+      outSlope: -0.043020025
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.0070568323
+      value: 0.44176483
+      inSlope: -5.8158855
+      outSlope: -5.8158855
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.022887468
+      value: 0.042938232
+      inSlope: -1.5176493
+      outSlope: -1.5176493
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.75936717
+    - serializedVersion: 3
+      time: 0.14227152
+      value: 0.01499939
+      inSlope: -0.011375456
+      outSlope: -0.011375456
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.3966111
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.09087321
+      outSlope: -0.09087321
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -259,7 +294,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.9935303
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -338,11 +373,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdfe3706dbfae7b4e8a999afef54a347, type: 3}
---- !u!198 &3390560148179616376 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 6405425537319486904, guid: fdfe3706dbfae7b4e8a999afef54a347, type: 3}
-  m_PrefabInstance: {fileID: 8640460360156137408}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3390560148179616379 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6405425537319486907, guid: fdfe3706dbfae7b4e8a999afef54a347, type: 3}
