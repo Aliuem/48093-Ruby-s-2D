@@ -230,6 +230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inimigo
       objectReference: {fileID: 0}
+    - target: {fileID: 279956872626666244, guid: 028a9902fbe57254ba2585f63a3c3f93, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5772949436402416854, guid: 028a9902fbe57254ba2585f63a3c3f93, type: 3}
       propertyPath: m_Controller
       value: 
@@ -240,11 +244,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6139097541187036405, guid: 028a9902fbe57254ba2585f63a3c3f93, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.79
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 6139097541187036405, guid: 028a9902fbe57254ba2585f63a3c3f93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.41
+      value: 2.23
       objectReference: {fileID: 0}
     - target: {fileID: 6139097541187036405, guid: 028a9902fbe57254ba2585f63a3c3f93, type: 3}
       propertyPath: m_LocalPosition.z
@@ -277,6 +281,14 @@ PrefabInstance:
     - target: {fileID: 6139097541187036405, guid: 028a9902fbe57254ba2585f63a3c3f93, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928355551596452362, guid: 028a9902fbe57254ba2585f63a3c3f93, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928355551596452362, guid: 028a9902fbe57254ba2585f63a3c3f93, type: 3}
+      propertyPath: MaxDistance
+      value: 1.2513847
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 028a9902fbe57254ba2585f63a3c3f93, type: 3}
@@ -9216,8 +9228,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.8379974, y: 34.645004}
-  m_SizeDelta: {x: -225.76, y: -155.424}
+  m_AnchoredPosition: {x: -2.8379974, y: 33.169}
+  m_SizeDelta: {x: -225.76, y: -158.376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &789178894
 MonoBehaviour:
@@ -9882,6 +9894,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1425688184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 803671903224415856, guid: eb566566e21746d49bbbf36660118107, type: 3}
+  m_PrefabInstance: {fileID: 4433895662980614141}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1457467556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10371,7 +10388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.12, y: 0.55}
   m_SizeDelta: {x: 300, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1828686140
@@ -10390,7 +10407,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2147483647
 --- !u!114 &1828686141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10502,6 +10519,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3638290126311274516, guid: eb566566e21746d49bbbf36660118107, type: 3}
   m_PrefabInstance: {fileID: 4433895662980614141}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1963513544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425688184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73d158f88f1d08647a0ba8363053714f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayTime: 4
+  dialogBox: {fileID: 1828686137}
 --- !u!1001 &2017929484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11228,6 +11259,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2792220041923867483, guid: 2e7dd103f7fdf5f438cff0cdeae2fcce, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9b1bb1f450b7d444fa4a8019d13519a7, type: 3}
     - target: {fileID: 2507867929634361424, guid: 2e7dd103f7fdf5f438cff0cdeae2fcce, type: 3}
       propertyPath: m_Controller
       value: 
@@ -11235,6 +11270,10 @@ PrefabInstance:
     - target: {fileID: 3336600740285457731, guid: 2e7dd103f7fdf5f438cff0cdeae2fcce, type: 3}
       propertyPath: m_Name
       value: "Ruby\xB4s"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3336600740285457731, guid: 2e7dd103f7fdf5f438cff0cdeae2fcce, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3336600740285457737, guid: 2e7dd103f7fdf5f438cff0cdeae2fcce, type: 3}
       propertyPath: hitSound
@@ -11351,21 +11390,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8470318020954652301, guid: eb566566e21746d49bbbf36660118107, type: 3}
       propertyPath: m_Size.x
-      value: 0.96296585
+      value: 1.4321208
       objectReference: {fileID: 0}
     - target: {fileID: 8470318020954652301, guid: eb566566e21746d49bbbf36660118107, type: 3}
       propertyPath: m_Size.y
-      value: 1.6722686
+      value: 1.1755162
       objectReference: {fileID: 0}
     - target: {fileID: 8470318020954652301, guid: eb566566e21746d49bbbf36660118107, type: 3}
       propertyPath: m_Offset.x
-      value: -0.37185043
+      value: -0.38564897
       objectReference: {fileID: 0}
     - target: {fileID: 8470318020954652301, guid: eb566566e21746d49bbbf36660118107, type: 3}
       propertyPath: m_Offset.y
-      value: 0.8361343
+      value: 0.15999937
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8470318020954652301, guid: eb566566e21746d49bbbf36660118107, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8673367490492788219, guid: eb566566e21746d49bbbf36660118107, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eb566566e21746d49bbbf36660118107, type: 3}
 --- !u!1001 &4472317199731398479
 PrefabInstance:
